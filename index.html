@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krzysztof Marciniak - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span data-pl="KM" data-en="KM">KM</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" data-pl="Strona główna" data-en="Home">Strona główna</a></li>
+                <li><a href="#projects" data-pl="Projekty" data-en="Projects">Projekty</a></li>
+                <li><a href="#contact" data-pl="Kontakt" data-en="Contact">Kontakt</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="lang-toggle" onclick="toggleLanguage()">
+                    <span class="lang-current">PL</span>
+                    <i class="fas fa-globe"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="grid-overlay"></div>
+            <div class="floating-elements">
+                <div class="element element-1"></div>
+                <div class="element element-2"></div>
+                <div class="element element-3"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span data-pl="Krzysztof" data-en="Krzysztof">Krzysztof</span>
+                    <span class="highlight">Marciniak</span>
+                </h1>
+                <p class="hero-subtitle" data-pl="Programista samouk & Entuzjasta technologii" data-en="Self-taught Programmer & Technology Enthusiast">
+                    Programista samouk & Entuzjasta technologii
+                </p>
+                <div class="hero-skills">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Unreal Engine 5</span>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary" data-pl="Zobacz projekty" data-en="View Projects">
+                        Zobacz projekty
+                    </a>
+                    <a href="#contact" class="btn btn-secondary" data-pl="Kontakt" data-en="Contact">
+                        Kontakt
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-pl="Projekty" data-en="Projects">Projekty</h2>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Scene_Genie</h3>
+                            <span class="project-status" data-pl="W trakcie" data-en="In Progress">W trakcie</span>
+                        </div>
+                        <p class="project-description" data-pl="Integracja LLM w workflow Unreal Engine 5 do automatycznego generowania scen i zasobów gry." data-en="LLM integration in Unreal Engine 5 workflow for automatic scene and game asset generation.">
+                            Integracja LLM w workflow Unreal Engine 5 do automatycznego generowania scen i zasobów gry.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Unreal Engine 5</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">LLM</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                <span data-pl="Kod źródłowy" data-en="Source Code">Kod źródłowy</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title" data-pl="Przyszły projekt" data-en="Upcoming Project">Przyszły projekt</h3>
+                        <p class="project-description" data-pl="Miejsce na kolejny projekt..." data-en="Space for the next project...">
+                            Miejsce na kolejny projekt...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-pl="Kontakt" data-en="Contact">Kontakt</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 data-pl="Skontaktuj się ze mną" data-en="Get in touch">Skontaktuj się ze mną</h3>
+                    <p data-pl="Jestem otwarty na nowe możliwości i ciekawe projekty. Nie wahaj się napisać!" data-en="I'm open to new opportunities and interesting projects. Feel free to reach out!">
+                        Jestem otwarty na nowe możliwości i ciekawe projekty. Nie wahaj się napisać!
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>krzysztof.marciniak@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-pl="Polska" data-en="Poland">Polska</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/your-github-username" target="_blank" class="social-link github">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://linkedin.com/in/your-linkedin-username" target="_blank" class="social-link linkedin">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Krzysztof Marciniak. <span data-pl="Wszelkie prawa zastrzeżone." data-en="All rights reserved.">Wszelkie prawa zastrzeżone.</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
